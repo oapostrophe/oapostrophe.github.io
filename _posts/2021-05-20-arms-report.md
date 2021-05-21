@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "ARMS - Verbose syntax language generator"
-author:
+author: sean
 categories: [ Robotics, Simulation ]
 image: assets/images/14.jpg
 ---
