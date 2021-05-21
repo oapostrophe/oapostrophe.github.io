@@ -3,7 +3,7 @@ name: "Scope of Practice"
 title: "Scope of Practice"
 description: "A former EMT's journey into computer science."
 logo: 'assets/images/computer_logo.png'
-favicon: 'assets/images/favicon.ico'
+favicon: 'assets/images/computer_logo.png'
 baseurl: ''
 google_analytics: ''
 disqus: ''
@@ -15,7 +15,7 @@ permalink: /:title/
 authors:
   sean:
     name: Sean O'Connor
-    display_name: oapostrophe
+    display_name: Sean O'Connor
     gravatar: swow2015@mymail.pomona.edu
     email: swow2015@mymail.pomona.edu
     web: https://github.com/oapostrophe
