@@ -10,8 +10,8 @@ comments: true
 
 <p>I'm Sean O'Connor, a nontraditional student studying Computer Science at Pomona College.  After growing up in rural Vermont, I spent 5 years in Detroit as an Emergency Medical Technician, working on some of the country's busiest ambulances.  EMS was both an incredibly challenging and rewarding experience; one footnote is when I won an award for rescuing a woman whose car launched <a target="_blank" href="https://www.clickondetroit.com/news/2017/08/18/man-partially-ejected-through-sunroof-killed-in-rollover-crash-on-fenkell-ave-in-detroit/">into the second story of a building</a>.</p>
 
-<p class="mb-5"><img class="shadow-lg" src="{{site.baseurl}}/assets/images/ems_photo.jpg" alt="A picture of the author standing next to a Detroit Ambulance" /></p>
-<i>A photo from the EMS days</i>
+<p class="mb-5"><img class="shadow-lg" src="{{site.baseurl}}/assets/images/ems_photo.jpg" alt="A picture of the author standing next to a Detroit Ambulance" /><br><i>A photo from the EMS days</i></p>
+
 
 <p>In 2019, I left EMS, moved to SoCal and started studying CS.  Like EMS, CS has been both challenging and rewarding.  After my first year of classes, I spent the summer researching the User Interface design of California Consumer Privacy Act "Don't Sell My Personal Info" opt-outs and wrote a <a target="_blank" href="https://arxiv.org/abs/2009.07884">paper</a> on the results.  I followed this research up by creating a <a target="_blank" href="https://github.com/oapostrophe/Who-sSellingMyInfo-">browser extension</a> that detects pages selling personal information and helps California users opt out.</p>
 
@@ -19,8 +19,8 @@ comments: true
 
 <p>This summer, I'll be exploring the software development industry as an intern at Indeed.  I currently live in Seattle with my partner Theo and our dog Stella.  When I'm not coding, I've been roller-blading around the city, making art, and learning modern dance.</p>
 
-<p class="mb-5"><img class="shadow-lg" src="{{site.baseurl}}/assets/images/stella_art.jpg" alt="A painting of my the author's dog Stella" /></p>
-<i>Some art I made of Stella</i>
+<p class="mb-5"><img class="shadow-lg" src="{{site.baseurl}}/assets/images/stella_art.jpg" alt="A painting of my the author's dog Stella" /><br><i>Some art I made of Stella</i></p>
+
 
 <p>I'd love to chat about my projects, my experience as a non-traditional CS student, or anything else!  If you're thinking about or currently studying CS, I'd also be happy to answer any questions and offer advice / mentorship on your journey.  Just send a message my way.  Thanks for reading!</p>
 </div>
