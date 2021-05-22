@@ -86,7 +86,7 @@ Testing ARMS with inputs of a few different lengths saves the user, on average, 
 
 The source code for the app can be found [on my GitHub](https://github.com/swow2015/arms2).  The app can be quickly demoed by downloading ["dist/main.js"](https://github.com/oapostrophe/arms2/blob/main/dist/main.js), ["dist/app.html"](https://github.com/oapostrophe/arms2/edit/main/dist/app.html), and ["dist/style.css"](https://github.com/oapostrophe/arms2/blob/main/dist/style.css).  With these three in the same directory, you can simply open the HTML file and the app will run.
 
-The app currently supports the following (see image above):
+The app currently supports the following (see demo above for sample usage):
 - All objects are contained in a Model.  Top-level statements should be a model definition of the form `ModelName = Model{ Definition }`.
 - A model definition can contain two types of sub-statements: model-wide parameters, defined like `parameter = value`, and child objects, defined `#objectName = primitive{ parameters}`
 - Currently the only model-wide parameter supported is `pose`, setting the model-wide position.
