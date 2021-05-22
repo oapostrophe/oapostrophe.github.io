@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  "ARMS - A JavaScript app saving 92% of robotics simulation code"
+title:  "ARMS - reducing robotics simulation code by 92%"
 author: sean
 categories: [ Robotics, Simulation ]
 image: assets/images/arms1/robot_image.png
 featured: true
 hidden: true
-description: "ARMS is a concise and intuitive alternative for writing verbose XML-based robotics simulation languages.  This post charts my journey building it over Spring 2022 and the path ahead."
+description: "A concise and intuitive alternative for writing verbose XML-based robotics simulation languages, built using browser JavaScript."
 comments: false
 ---
 
