@@ -70,7 +70,7 @@ Since text descriptions of 3D objects are error-prone due to being tough to ment
 
 The result is a simple web interface that lets the user enter short and intuitive ARMS code and click "compile".  The app will then output the corresponding, substantially longer SDF code below, along with a visualization of the objects created.
 
-Testing ARMS with inputs of a few different lengths shows that it saves, on average, **80%** by lines of code or **92%** by character count.  That is to say, using ARMS to generate a SDF simulation requires the user to type 92% fewer characters than writing the SDF by hand themselves.
+Testing ARMS with inputs of a few different lengths saves the user, on average, **80%** by lines of code or **92%** by character count.  That is to say, using ARMS to generate a SDF simulation requires the user to type 92% fewer characters than writing the SDF by hand themselves.
 
 ![Testing the ARMS app]({{site.baseurl}}/assets/images/arms1/arms_table.png)
 
