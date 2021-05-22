@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "ARMS - reducing robotics simulation code by 92%"
+title:  "ARMS - Reducing robot simulation code by 92%"
 author: sean
 categories: [ Robotics, Simulation ]
 image: assets/images/arms1/robot_image.png
