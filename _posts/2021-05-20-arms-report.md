@@ -1,21 +1,28 @@
 ---
 layout: post
-title:  "ARMS - Verbose syntax language generator"
+title:  "ARMS - A tool for simplifying verbose robotics simulation languages"
 author: sean
 categories: [ Robotics, Simulation ]
-image: assets/images/robot_selfie.png
+image: assets/images/arms1/robot_image.png
 ---
 
 Let's say you're designing a robot.  This robot will be used to go over rough terrain as part of post-disaster search-and-rescue missions, so it's important that it be both tall enough to clear uneven ground and stable enough not to topple over on bumps.  You want to know: what height and width will offer the optimal combination of ground clearance and stability?
 
 One possible way to find out might be to build several different robots of varying dimensions and test how they perform.  But building each physical robot is expensive and time-consuming, not to mention that there might be a lot of feasible height-weight combinations.  So you also want to know: is there a way we can test different builds, without the cost of physically building every configuration we want to test?
 
-![Selife taken by a robot from the ARCs lab being built](images/robot_selfie.png)  
-*An ARCS lab robot taking a selfie while under construction.*
+![Selife taken by a robot from the ARCs lab during its construction]({{site.baseurl}}/assets/images/arms1/robot_selfie.png)  
 
-The answer is simulation.  By simulating each potential robot design, we can test how it performs without wasting time or materials to physically build it.  Simulation has an important place in the robotics field, and a number of tools exist for the simulations of robots: [DART](https://dartsim.github.io/), [Gazebo](http://gazebosim.org/), and [URDF](http://wiki.ros.org/urdf) to name a few.  But one common issue with such simulations is that many of these tools require verbose and difficult-to-read input.  For instance, let's look at the XML-based [SDFormat](http://sdformat.org/) used by Gazebo.  Below is the code required to create a simple 1x1x1 cube object:
+*One of our lab robots taking a selfie during its construction.*
 
-![1x1x1 cube in SDF](images/sdf_cube_snippet.png)
+The answer is simulation.  By simulating each potential robot design, we can test how it performs without wasting time or materials to physically build it.  Simulation has an important place in the robotics field, and a number of tools exist for the simulations of robots: [DART](https://dartsim.github.io/), [Gazebo](http://gazebosim.org/), and [URDF](http://wiki.ros.org/urdf) to name a few.  But one common issue with such simulations is that many of these tools require verbose and difficult-to-read input.  For instance, let's look at the XML-based [SDFormat](http://sdformat.org/) used by Gazebo.  Consider one of the simplest possible objects - a 1x1x1 cube:
+
+![plain cube]({{site.baseurl}}/assets/images/arms1/gazebo_cube.png)
+
+*A gray cube on a gray background in Gazebo - about as plain as it gets.*
+
+Below is the SDF code required to create this basic object:
+
+![1x1x1 cube in SDF]({{site.baseurl}}/assets/images/arms1/sdf_cube_snippet.png)
 
 Look at all those tags!  I'm getting a headache already.  Wouldn't it be nice if instead we could write something like this?
 ```
@@ -34,22 +41,22 @@ Over the Spring 2021 semester, I worked in Pomona's [Autonomous Robotics and Com
 
 I started by working with the SDF language.  My goals for the semester were:
 
-- Define a concise and intuitive ARMS language that offers similar power to SDF in a condensed, easier-to-use syntax.
+- Define a concise and intuitive Autonomous Robot Markup Syntax (ARMS) language that offers similar power to SDF in a condensed, easier-to-use syntax.
 - Create a JavaScript parser for ARMS and an evaluator that translates the parsed input to SDF
-- Build a simple web interface into which the user can input ARMS, receive an SDF translation, and instantly see a preliminary visualization of their scene in-browser.
+- Build a simple web interface into which the user can input ARMS, receive an SDF translation, and instantly see a visualization of their scene in-browser.
 
 ## Development
 
 Writing a lexer and parser by hand would be a lot of work, especially since the ARMS language has changed substantially throughout development.  Thankfully I found [Lezer](https://lezer.codemirror.net/): a tool that automatically creates a Javascript parser given a user-defined language.  The first step was to formally define the ARMS language in a .grammar file:
 
-![Example of simple grammar from early development](images/grammar_early_snippet.png)   
+![Example of simple grammar from early development]({{site.baseurl}}/assets/images/arms1/grammar_early_snippet.png)   
 *Part of the ARMS grammar during early development*
 
 The language is defined as a context-free grammar, with each rule defined in the format `RuleName{ RuleDefinition }`.  The RuleDefinition can contain RuleNames, tokens, and can use regular expression operators like `*` (Kleene star), `|` (or), `+` (one or more), etc.  Tokens are each defined as a regular expression in a `@tokens` block (the Lezer-generated file will perform both lexing and parsing).
 
 With a grammar in hand, I used Lezer to generate a JavaScript parser for ARMS.  I then imported the parser into another JavaScript file and set it to parse user-entered input from a simple HTML interface.  One tricky area I ran into is that browser JavaScript currently offers poor support for import statements; to overcome this, I used [Webpack](https://webpack.js.org/) to bundle all of my code's dependencies into a single, self-contained file.
 
-![Bundled javascript...holy wall of text!](images/bundled_javascript.png)  
+![Bundled javascript...holy wall of text!]({{site.baseurl}}/assets/images/arms1/bundled_javascript.png)  
 *The bundled javascript file for ARMS...holy wall of text!*
 
 I then wrote code to evaluate the Lezer-generated parse tree and generate the corresponding SDF code.  The documentation for evaluating a Lezer parse tree is somewhat sparse, so the process involved some trial and error.  I gradually built up support for one SDF feature at a time, adding cubes, spheres, joints, and support for variable object scale and position.  As I went, the codebase grew to around 450 lines of JavaScript, and required re-factoring a couple of times along the way.
@@ -58,10 +65,24 @@ Since text descriptions of 3D objects are tough to picture and thus to write and
 
 ## Results:
 
-![Current state of the ARMs app](images/demo4.png)  
+![Current state of the ARMs app]({{site.baseurl}}/assets/images/arms1/demo4.png)  
 *Current state of the ARMs app*
 
 The result is a simple web interface that lets the user enter short and intuitive ARMS code and click "compile".  The app will then output the corresponding, substantially longer SDF code below, along with a visualization of the objects created.
+
+Testing ARMS with inputs of a few different lengths shows that it saves, on average, **80%** by lines of code or **92%** by character count.  That is to say, using ARMS to generate a SDF simulation requires the user to type 92% fewer characters than writing the SDF by hand themselves.
+
+![Testing the ARMS app]({{site.baseurl}}/assets/images/arms1/arms_table.png)
+
+*Three trials of ARMS with various length inputs*
+
+![ARMS graph]({{site.baseurl}}/assets/images/arms1/arms_fig1.png)
+
+*Graph of the % of code saved based on input size*
+
+![ARMS graph 2]({{site.baseurl}}/assets/images/arms1/arms_fig2.png)
+
+*The savings are even higher and more consistent when considered by character count.*
 
 The source code for the app can be found [here](https://github.com/swow2015/arms2).  The app can be quickly demoed by downloading "dist/main.js" and "dist/app.html".  With these two in the same directory, you can simply open the HTML file and the app will run.
 
@@ -74,4 +95,5 @@ The app currently supports the following (see image above):
 - `sphere` is a sphere object that supports the parameters `pose` and `radius`.
 - `fixed` is a fixed joint that requires the parameters `parent` and `child`, both of which should be the objectNames of two other objects in the same model.
 
+Much remains to be done on the app, which I hope to continue work on through the Summer and Fall.  Notably, several SDF primitives need to be added; support for user-defined templates is not yet implemented; and stricter type-checking needs to be implemented to catch errors.  If you're interested in reading more on the development process, my full [end-of-semester report](https://github.com/oapostrophe/arms2/blob/main/README.md) contains details including tutorials on how I accomplished each task.  If you're working on a similar app or want to contribute to ARMS' development, feel free to [email me](mailto:swow2015@mymail.pomona.edu) with any questions.  Thanks for reading!
 
