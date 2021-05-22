@@ -61,7 +61,7 @@ With a grammar in hand, I used Lezer to generate a JavaScript parser for ARMS.  
 
 I then wrote code to evaluate the Lezer-generated parse tree and generate the corresponding SDF code.  The documentation for evaluating a Lezer parse tree is somewhat sparse, so the process involved some trial and error.  I gradually built up support for one SDF feature at a time, adding cubes, spheres, joints, and support for variable object scale and position.  As I went, the codebase grew to around 450 lines of JavaScript, and required re-factoring a couple of times along the way.
 
-Since text descriptions of 3D objects are tough to picture and thus to write and debug, I decided to add an in-browser visualization of the user's objects.  I accomplished this with [ThreeJS](https://threejs.org/), adding code to dynamically generate and render a scene from the user's ARMS code as its parse tree is evaluated.
+Since text descriptions of 3D objects are error-prone due to being tough to mentally visualize, I decided to add an in-browser visualization of the user's objects.  I accomplished this with [ThreeJS](https://threejs.org/), adding code to dynamically generate and render a scene from the user's ARMS code as its parse tree is evaluated.
 
 ## Results:
 
