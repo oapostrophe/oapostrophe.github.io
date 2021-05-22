@@ -84,7 +84,7 @@ Testing ARMS with inputs of a few different lengths saves the user, on average, 
 
 *The savings are even higher when considered by character count.*
 
-The source code for the app can be found [here](https://github.com/swow2015/arms2).  The app can be quickly demoed by downloading "dist/main.js" and "dist/app.html".  With these two in the same directory, you can simply open the HTML file and the app will run.
+The source code for the app can be found [on my GitHub](https://github.com/swow2015/arms2).  The app can be quickly demoed by downloading ["dist/main.js"](https://github.com/oapostrophe/arms2/blob/main/dist/main.js), ["dist/app.html"](https://github.com/oapostrophe/arms2/edit/main/dist/app.html), and ["dist/style.css"](https://github.com/oapostrophe/arms2/blob/main/dist/style.css).  With these three in the same directory, you can simply open the HTML file and the app will run.
 
 The app currently supports the following (see image above):
 - All objects are contained in a Model.  Top-level statements should be a model definition of the form `ModelName = Model{ Definition }`.
