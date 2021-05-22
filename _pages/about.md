@@ -7,6 +7,9 @@ comments: true
 
 <div class="row justify-content-between">
 <div class="col-md-8 pr-5">
+
+<p class="mb-5"><img class="shadow-lg" src="{{site.baseurl}}/assets/images/profile_pic.jpg" alt="A picture of me, Sean O'Connor" /></p>
+
 <p>I'm Sean O'Connor, a nontraditional student studying Computer Science at Pomona College.  After growing up in rural Vermont, I spent 5 years as an Emergency Medical Technician in Detroit, on some of the country's busiest ambulances.  I both faced enormous challenges and had incredibly rewarding experiences as an EMT; I even won an award for <a target="_blank" href="https://www.clickondetroit.com/news/2017/08/18/man-partially-ejected-through-sunroof-killed-in-rollover-crash-on-fenkell-ave-in-detroit/">this call</a> where I rescued a woman whose car launched into the second story of a building and landed on its roof.</p>
 
 <p>In 2019, I transitioned to studying Computer Science at Pomona.  I spent a summer researching the User Interface design of California Consumer Privacy Act "Don't Sell My Info" opt-outs, writing a <a target="_blank" href="https://arxiv.org/abs/2009.07884">paper</a> on the results.  I followed this research up by creating a <a target="_blank" href="https://github.com/oapostrophe/Who-sSellingMyInfo-">browser extension</a> that detects pages selling personal information and helps California users opt out.</p>
@@ -22,5 +25,3 @@ comments: true
 <p>I'd love to chat about my projects, my experience as a non-traditional CS student, or anything else!  If you're thinking about or currently studying CS, I'd also be happy to answer any questions and offer advice / mentorship on your journey.</p>
 
 I'm graduating in Spring 2022, and would be interested in hearing about any full-time job opportunities starting after that time period.  So if you know of something that you think might be a good fit, definitely send a message my way!  Thanks for reading!</p>
-
-<p class="mb-5"><img class="shadow-lg" src="{{site.baseurl}}/assets/images/profile_pic.jpg" alt="A picture of me, Sean O'Connor" /></p>
