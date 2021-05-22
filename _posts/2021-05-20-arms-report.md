@@ -82,7 +82,7 @@ Testing ARMS with inputs of a few different lengths saves the user, on average, 
 
 ![ARMS graph 2]({{site.baseurl}}/assets/images/arms1/arms_fig2.png)
 
-*The savings are even higher and more consistent when considered by character count.*
+*The savings are even higher when considered by character count.*
 
 The source code for the app can be found [here](https://github.com/swow2015/arms2).  The app can be quickly demoed by downloading "dist/main.js" and "dist/app.html".  With these two in the same directory, you can simply open the HTML file and the app will run.
 
