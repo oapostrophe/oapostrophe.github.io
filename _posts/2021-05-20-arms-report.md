@@ -7,6 +7,7 @@ image: assets/images/arms1/robot_image.png
 featured: true
 hidden: true
 description: "ARMS is a concise and intuitive alternative for writing verbose XML-based robotics simulation languages.  This post charts my journey building it over Spring 2022 and the path ahead."
+comments: false
 ---
 
 Let's say you're designing a robot.  This robot will be used to go over rough terrain as part of post-disaster search-and-rescue missions, so it's important that it be both tall enough to clear uneven ground and stable enough not to topple over on bumps.  You want to know: what height and width will offer the optimal combination of ground clearance and stability?
