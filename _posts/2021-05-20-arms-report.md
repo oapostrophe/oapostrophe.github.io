@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "ARMS - A browser JavaScript app that saves 92% of robotics simulation code"
+title:  "ARMS - A JavaScript app saving 92% of robotics simulation code"
 author: sean
 categories: [ Robotics, Simulation ]
 image: assets/images/arms1/robot_image.png
