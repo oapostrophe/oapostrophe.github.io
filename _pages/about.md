@@ -24,5 +24,3 @@ comments: true
 I'm graduating in Spring 2022, and would be interested in hearing about any full-time job opportunities starting after that time period.  So if you know of something that you think might be a good fit, definitely send a message my way!  Thanks for reading!</p>
 
 <p class="mb-5"><img class="shadow-lg" src="{{site.baseurl}}/assets/images/profile_pic.jpg" alt="A picture of me, Sean O'Connor" /></p>
-</div>
-</div>
