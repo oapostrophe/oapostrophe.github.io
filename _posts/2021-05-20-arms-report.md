@@ -66,7 +66,7 @@ Since text descriptions of 3D objects are error-prone due to being tough to ment
 ## Results:
 
 ![Current state of the ARMs app]({{site.baseurl}}/assets/images/arms1/demo4.png)  
-*Current state of the ARMs app*
+*The ARMS app in action*
 
 The result is a simple web interface that lets the user enter short and intuitive ARMS code and click "compile".  The app will then output the corresponding, substantially longer SDF code below, along with a visualization of the objects created.
 
