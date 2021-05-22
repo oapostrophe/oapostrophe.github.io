@@ -18,7 +18,7 @@ This summer, I'll be exploring the software development industry as an intern at
 
 <h4> Contact </h4>
 
-<p>You can reach me by <a target="_blank" href="mailto:swow2015@mymail.pomona.edu">email</a> or on <a target="_blank" href="https://www.linkedin.com/in/sean-o-connor-11b193b3/">LinkedIn</a>.  If you're trying to build on one of my projects, feel free to email me with questions or submit an issue on <a target="_blank" href="https://github.com/">GitHub</a>.
+<p>You can reach me by <a target="_blank" href="mailto:swow2015@mymail.pomona.edu">email</a> or on <a target="_blank" href="https://www.linkedin.com/in/oapostrophe/">LinkedIn</a>.  If you're trying to build on one of my projects, feel free to email me with questions or submit an issue on <a target="_blank" href="https://github.com/">GitHub</a>.
 
 I'd love to chat about my projects, my experience as a non-traditional CS student, or anything else!  If you're thinking about or currently studying CS, I'd also be happy to answer any questions and offer advice / mentorship on your journey.
 
