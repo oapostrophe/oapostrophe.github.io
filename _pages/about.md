@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Sean O'Connor
+title: About me
 permalink: /about
 comments: true
 ---
