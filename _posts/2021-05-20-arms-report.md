@@ -20,11 +20,11 @@ One possible way to find out might be to build several different robots of varyi
 
 *One of our lab robots taking a selfie during its construction.*
 
-The answer is simulation.  By simulating each potential robot design, we can test how it performs without wasting time or materials to physically build it.  Simulation has an important place in the robotics field, and a number of tools exist for the simulations of robots: [DART](https://dartsim.github.io/), [Gazebo](http://gazebosim.org/), and [URDF](http://wiki.ros.org/urdf) to name a few.  But one common issue with such simulations is that many of these tools require verbose and difficult-to-read input.  For instance, let's look at the XML-based [SDFormat](http://sdformat.org/) used by Gazebo.  Consider one of the simplest possible objects - a 1x1x1 cube:
+The answer is simulation.  By simulating each potential robot design, we can test how it performs without wasting time or materials to physically build it.  Simulation has an important place in the robotics field, and a number of tools exist for the simulations of robots: [DART](https://dartsim.github.io/), [Gazebo](http://gazebosim.org/), and [URDF](http://wiki.ros.org/urdf) to name a few.  But one common issue with such simulations is that many of these tools require verbose and difficult-to-read input.  For instance, let's look at the XML-based [SDFormat](http://sdformat.org/) used by Gazebo.  Consider one of the simplest possible objects - a `1x1x1` cube:
 
 ![plain cube]({{site.baseurl}}/assets/images/arms1/gazebo_cube.png)
 
-*A gray cube on a gray background in Gazebo - about as plain as it gets.*
+*A gray cube on a gray background in Gazebo - so basic you almost can't see it.*
 
 Below is the SDF code required to create this basic object:
 
@@ -65,7 +65,7 @@ With a grammar in hand, I used Lezer to generate a JavaScript parser for ARMS.  
 ![Bundled javascript...holy wall of text!]({{site.baseurl}}/assets/images/arms1/bundled_javascript.png)  
 *The bundled javascript file for ARMS...holy wall of text!*
 
-I then wrote code to evaluate the Lezer-generated parse tree and generate the corresponding SDF code.  The documentation for evaluating a Lezer parse tree is somewhat sparse, so the process involved some trial and error.  I gradually built up support for one SDF feature at a time, adding cubes, spheres, joints, and support for variable object scale and position.  As I went, the codebase grew to around 450 lines of JavaScript, and required re-factoring a couple of times along the way.
+I then wrote code to evaluate the Lezer-generated parse tree and generate the corresponding SDF code.  I gradually built up support for one SDF feature at a time, adding cubes, spheres, joints, and support for variable object scale and position.  As I went, the app grew to around 450 lines of JavaScript.
 
 Since text descriptions of 3D objects are error-prone due to being tough to mentally visualize, I decided to add an in-browser visualization of the user's objects.  I accomplished this with [ThreeJS](https://threejs.org/), adding code to dynamically generate and render a scene from the user's ARMS code as its parse tree is evaluated.
 
