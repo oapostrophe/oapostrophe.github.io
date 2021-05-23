@@ -10,7 +10,7 @@ comments: false
 
 <p>I'm Sean O'Connor, a nontraditional student studying Computer Science at Pomona College.  After growing up in rural Vermont, I spent 5 years in Detroit as an Emergency Medical Technician, working on the busiest ambulances in the country.  EMS was both an incredibly challenging and rewarding experience; one footnote is when I won an award for rescuing a woman whose car launched <a target="_blank" href="https://www.clickondetroit.com/news/2017/08/18/man-partially-ejected-through-sunroof-killed-in-rollover-crash-on-fenkell-ave-in-detroit/">into the second story of a building</a>.</p>
 
-<p class="mb-5"><img class="shadow-lg" src="{{site.baseurl}}/assets/images/ems_photo.jpg" alt="A picture of the author standing next to a Detroit Ambulance" /><br><i>A photo from the EMS days, when my hair was a lot shorter.</i></p>
+<p class="mb-5"><img class="shadow-lg" src="{{site.baseurl}}/assets/images/ems_photo.jpg" alt="A picture of the author standing next to a Detroit Ambulance" /><br><i>The EMS days, when my hair was a lot shorter.</i></p>
 
 <p>In 2019, I left EMS, moved to SoCal and started my CS journey.  Like EMS, I've found CS both challenging and rewarding.  After my first year of classes, I spent the summer researching the User Interface design of California Consumer Privacy Act "Don't Sell My Personal Info" opt-outs.  I wrote a <a target="_blank" href="https://arxiv.org/abs/2009.07884">paper</a> on the results, which I followed up by creating a <a target="_blank" href="https://github.com/oapostrophe/Who-sSellingMyInfo-">browser extension</a> that detects pages selling the user's information and helps them opt out.</p>
 
