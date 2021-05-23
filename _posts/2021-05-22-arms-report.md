@@ -9,7 +9,7 @@ hidden: true
 comments: false
 ---
 
-*Building ARMS: a concise alternative for writing verbose robotics simulation languages, built with browser JavaScript.*
+*The development journey of ARMS: a concise alternative for writing verbose robotics simulation languages, built with browser JavaScript.*
 
 ## Project Background
 
