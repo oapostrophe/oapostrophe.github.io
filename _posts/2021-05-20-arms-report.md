@@ -8,7 +8,9 @@ featured: true
 hidden: true
 comments: false
 ---
-*A concise and intuitive alternative for writing verbose robotics simulation languages, built using browser JavaScript.*
+*A concise and intuitive alternative for writing verbose robotics simulation languages, built with browser JavaScript.*
+
+## Project Background
 
 Let's say you're designing a robot.  This robot will be used to go over rough terrain as part of post-disaster search-and-rescue missions, so it's important that it be both tall enough to clear uneven ground and stable enough not to topple over on bumps.  You want to know: what height and width will offer the optimal combination of ground clearance and stability?
 
@@ -46,12 +48,12 @@ Over the Spring 2021 semester, I worked in Pomona's [Autonomous Robotics and Com
 I started by working with the SDF language.  My goals for the semester were:
 
 - Define a concise and intuitive Autonomous Robot Markup Syntax (ARMS) language that offers similar power to SDF in a condensed, easier-to-use syntax.
-- Create a JavaScript parser for ARMS and an evaluator that translates the parsed input to SDF
+- Create a JavaScript parser for ARMS and an application that translates the parsed input to SDF
 - Build a simple web interface into which the user can input ARMS, receive an SDF translation, and instantly see a visualization of their scene in-browser.
 
 ## Development
 
-Writing a lexer and parser by hand would be a lot of work, especially since the ARMS language has changed substantially throughout development.  Thankfully I found [Lezer](https://lezer.codemirror.net/): a tool that automatically creates a Javascript parser given a user-defined language.  The first step was to formally define the ARMS language in a .grammar file:
+As I started designing ARMS, I surprisingly found myself having flashbacks to Pomona's Theory of Languages course.  Lexing, parsing, context-free grammars, regular expressions: I can't say that I expected to encounter any of these concepts in a robotics lab!  Writing a lexer and parser by hand would be a lot of work, especially since the ARMS language has changed substantially throughout development.  Thankfully I found [Lezer](https://lezer.codemirror.net/): a tool that automatically creates a Javascript parser given a user-defined language.  The first step was to formally define the ARMS language in a .grammar file:
 
 ![Example of simple grammar from early development]({{site.baseurl}}/assets/images/arms1/grammar_early_snippet.png)   
 *Part of the ARMS grammar during early development*
@@ -99,5 +101,4 @@ The app currently supports the following (see demo above for sample usage):
 - `sphere` is a sphere object that supports the parameters `pose` and `radius`.
 - `fixed` is a fixed joint that requires the parameters `parent` and `child`, both of which should be the objectNames of two other objects in the same model.
 
-Much remains to be done on the app, which I hope to continue work on through the Summer and Fall.  Notably, several SDF primitives need to be added; support for user-defined templates is not yet implemented; and stricter type-checking needs to be implemented to catch errors.  If you're interested in reading more on the development process, my full [end-of-semester report](https://github.com/oapostrophe/arms2/blob/main/README.md) contains details including tutorials on how I accomplished each task.  If you're working on a similar app or want to contribute to ARMS' development, feel free to [email me](mailto:swow2015@mymail.pomona.edu) with any questions.  Thanks for reading!
-
+Much remains to be done on the app, which I hope to continue work on through the Summer and Fall.  Notably, several SDF primitives need to be added; support for user-defined templates is not yet implemented; and stricter type-checking needs to be implemented to catch errors.  If you're interested in reading more on the development process, my full [end-of-semester report](https://github.com/oapostrophe/arms2/blob/main/README.md) contains further details including tutorials on each major aspect of development.  If you're working on a similar app or want to contribute to ARMS, feel free to [email me](mailto:swow2015@mymail.pomona.edu) with any questions.  Thanks for reading!
