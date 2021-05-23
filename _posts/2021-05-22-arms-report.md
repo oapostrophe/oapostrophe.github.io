@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "ARMS - Reducing robot simulation code by 92%"
+title:  "Reducing robot simulation code by 92%"
 author: sean
 categories: [ Robotics, Simulation ]
 image: assets/images/arms1/robot_image.png
@@ -8,7 +8,7 @@ featured: true
 hidden: true
 comments: false
 ---
-*A concise and intuitive alternative for writing verbose robotics simulation languages, built with browser JavaScript.*
+*Building ARMS: a concise alternative for writing verbose robotics simulation languages, built with browser JavaScript.*
 
 ## Project Background
 
