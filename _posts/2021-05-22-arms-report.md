@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Shortening Robot Simulation Code by 92%"
+title:  "Language Matters: Shortening Robot Simulation Code by 92%"
 author: sean
 categories: [ Robotics, Simulation ]
 image: assets/images/arms1/robot_image.png
@@ -10,7 +10,7 @@ description: "Technical blog post about developing a JavaScript tool to simplify
 comments: false
 ---
 
-*The development journey of ARMS: a concise alternative for writing verbose robotics simulation languages, built with browser JavaScript.*
+*The development journey of a concise alternative for writing verbose robotics simulation languages, built with browser JavaScript.*
 
 ## Project Background
 
