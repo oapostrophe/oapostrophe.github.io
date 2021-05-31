@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Reducing Robot Simulation Code by 92%"
+title:  "Shortening Robot Simulation Code by 92%"
 author: sean
 categories: [ Robotics, Simulation ]
 image: assets/images/arms1/robot_image.png
