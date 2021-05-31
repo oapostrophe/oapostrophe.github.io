@@ -6,7 +6,7 @@ categories: [ Robotics, Simulation ]
 image: assets/images/arms1/robot_image.png
 featured: true
 hidden: true
-description: "Blog post about developing a JavaScript tool to simplify writing SDF for Gazebo Robotics Simulations."
+description: "Technical blog post about developing a JavaScript tool to simplify writing SDF for Gazebo Robotics Simulations."
 comments: false
 ---
 
