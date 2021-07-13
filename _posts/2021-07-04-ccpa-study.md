@@ -4,7 +4,7 @@ title:  "How do companies comply with ccpa?"
 author: sean
 categories: [ Privacy, User Interface, Dark Patterns, CCPA ]
 image: assets/images/heartnet1/banner_image.jpg
-featured: true
+featured: false
 hidden: true
 description: "Blog post discussing how UI dark patterns subvert the effect of the California Consumer Privacy Act"
 comments: false
@@ -21,7 +21,7 @@ These data brokers have amassed extensive profiles on billions of people across 
 ![If only all tracking was this wholesome]({{site.baseurl}}/assets/images/ccpa1/data-broker-profiles.png)
 *Examples of information included in Data Broker Profiles.*
 
-What's more, in the world of smart appliances, data harvesting goes beyond your internet browsing.  Carrying a smartphone at all times [enables our location history to be silently tracked](https://myshadow.org/location-tracking) and sold by apps we've installed (including when we're not using them), wifi networks we pass, and even our [phone](https://www.eff.org/press/releases/eff-sues-att-data-aggregators-giving-bounty-hunters-and-other-third-parties-access) [network providers](https://www.vice.com/en/article/nekm87/verizon-stop-selling-phone-location-data-wyden-securus-locationsmart).  Internet-connected medical devices like CPAP machines [secretly sell](https://www.propublica.org/article/you-snooze-you-lose-insurers-make-the-old-adage-literally-true) usage data to insurance companies.  Every time you swipe your credit card, payment processing companies, [not subject to the same strict data protection regulations as banks](https://www.ftc.gov/system/files/documents/public_comments/2016/11/00035-129640.pdf), can log and sell the transaction data.  "Smart" appliances like TVs, thermostats, laundry machines, even electric toothbrushes all [have the potential to track and sell your activity](https://www.theguardian.com/commentisfree/2021/apr/05/tech-police-surveillance-smart-home-devices).
+What's more, in the world of smart appliances, data harvesting goes beyond your internet browsing.  Carrying a smartphone at all times [enables our location history to be silently tracked](https://myshadow.org/location-tracking) and sold by apps we've installed (including when we're not using them), wifi networks we pass, and [even](https://www.eff.org/press/releases/eff-sues-att-data-aggregators-giving-bounty-hunters-and-other-third-parties-access) our [phone network providers](https://www.vice.com/en/article/nekm87/verizon-stop-selling-phone-location-data-wyden-securus-locationsmart).  Internet-connected medical devices like CPAP machines [secretly sell](https://www.propublica.org/article/you-snooze-you-lose-insurers-make-the-old-adage-literally-true) usage data to insurance companies.  Every time you swipe your credit card, payment processing companies, [not subject to the same strict data protection regulations as banks](https://www.ftc.gov/system/files/documents/public_comments/2016/11/00035-129640.pdf), can log and sell the transaction data.  "Smart" appliances like TVs, thermostats, laundry machines, even electric toothbrushes all [have the potential to track and sell your activity](https://www.theguardian.com/commentisfree/2021/apr/05/tech-police-surveillance-smart-home-devices).
 
 
 ![If only all tracking was this wholesome]({{site.baseurl}}/assets/images/ccpa1/tracking-meme.png)
@@ -85,8 +85,6 @@ When entering the page, users were randomly assigned to different designs of CCP
 
 ![Our ccpa banner]({{site.baseurl}}/assets/images/ccpa1/google-ad.png)
 *The mock CCPA banner displayed on our site (we tested it displayed in various conditions across the page).*
-
-
 
 The results show that almost all of the design elements we saw companies implement significantly reduced how many users opted out of having their personal information sold.  Unsurprisingly, when "Do Not Sell My Personal Information" was placed as a small link at the bottom of the website instead of shown in a banner, users were significantly less likely to interact with it (p < 0.001).  While 14% of Google Ads users used our opt out when it was displayed in a banner, **just 1% of users from Google Ads clicked our link at the bottom of the page to opt out.**  Mechanical Turk opt-out similarly decreased from 19.3% to 8.6%, and users shown a banner were 16.6% more likely to be aware they had an option to 
 
