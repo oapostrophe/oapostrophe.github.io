@@ -3,9 +3,9 @@ layout: post
 title:  "How do companies comply with ccpa?"
 author: sean
 categories: [ Privacy, User Interface, Dark Patterns, CCPA ]
-image: assets/images/heartnet1/banner_image.jpg
+image: assets/images/heartnet1/tracking-image.jpg
 featured: false
-hidden: true
+hidden: false
 description: "Blog post discussing how UI dark patterns subvert the effect of the California Consumer Privacy Act"
 comments: false
 ---
