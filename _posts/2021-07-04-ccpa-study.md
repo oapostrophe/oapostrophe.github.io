@@ -16,7 +16,7 @@ comments: false
 
 Over the past two decades, digital tracking and the online sale of personal information has exploded.  When visiting a website or opening a mobile app, you can now expect almost everything you do to be [tracked](https://crackedlabs.org/en/corporate-surveillance): not just by the company you're visiting, but by dozens of other companies [bidding for ads on the page](https://www.eff.org/wp/behind-the-one-way-mirror#Part3), [social media websites](https://www.wired.com/story/ways-facebook-tracks-you-limit-it/), the [search engine that referred you](https://spreadprivacy.com/what-does-google-know-about-me/), and the website's [analytics service providers](https://developers.google.com/analytics/resources/concepts/gaConceptsTrackingOverview).  Almost [every page you visit](https://whotracks.me/companies/reach-chart.html), what you do there, and information like the location and time from which you did so are now tracked by third parties.  In essence, the websites you're visiting sell information about what you do there, which ends up being re-sold until it's eventually collected by companies called ["data brokers"](https://www.eff.org/wp/behind-the-one-way-mirror#Data-brokers).
 
-These data brokers have amassed extensive profiles on billions of people across the globe, often containing thousands of pieces of information including sensitive attributes like race, gender identity, sexual orientation, political and religious beliefs.  Data brokers know where you live, work, and travel.  They know your shopping and [dating preferences](https://www.engadget.com/2020-01-14-study-finds-grindr-okcupid-tinder-spreading-sensitive-data.html).  They track your medical and psychiatric history.  They also use AI to analyze the enormous amount of information they've stored on you and draw inferences about topics like [your health and risk to medical insurers](https://www.wsj.com/articles/SB10001424052748704648604575620750998072986), what political messaging you'll respond to, and how likely you are to commit a crime.
+These data brokers have amassed extensive profiles on billions of people across the globe, often containing thousands of pieces of information including race, gender identity, sexual orientation, political and religious beliefs.  Data brokers know where you live, work, and travel.  They know your shopping and [dating preferences](https://www.engadget.com/2020-01-14-study-finds-grindr-okcupid-tinder-spreading-sensitive-data.html).  They track your medical and psychiatric history.  They also use AI to analyze the enormous amount of information they've stored on you and draw inferences about topics like [your risk to medical insurers](https://www.wsj.com/articles/SB10001424052748704648604575620750998072986), what political messaging you'll respond to, and how likely you are to commit a crime.
 
 ![Examples of information included in Data Broker Profiles]({{site.baseurl}}/assets/images/ccpa1/data-broker-profiles.jpg)
 
@@ -26,8 +26,6 @@ What's more, in the world of smart appliances, data harvesting goes beyond just 
 
 
 ![If only all tracking was this wholesome]({{site.baseurl}}/assets/images/ccpa1/tracking-meme.jpg)
-
-*We can only guess the full extent of who's buying this information and for what purposes.*
 
 What is such information used for, other than uncannily targeted ads following you around the internet?  Here are just a few things that we know of:
 - The US military, who we know [uses phone metadata for targeting drone strikes](https://www.vice.com/en/article/3da8n9/the-problem-with-using-metadata-to-justify-drone-strikes), buys location data in bulk--including that [harvested from a popular Muslim prayer app](https://www.vice.com/en/article/jgqm5x/us-military-location-data-xmode-locate-x).
@@ -45,7 +43,7 @@ You might wonder: when you visit a website or download an app onto your phone, h
 
 ![Data aggregation]({{site.baseurl}}/assets/images/ccpa1/data-aggregation.png)
 
-*A diagram illustrating the process of data aggregation and identification.*
+*The process of data aggregation and identification.*
 
 ## California Steps in
 
@@ -55,37 +53,33 @@ When the law became enforceable on July 1, 2020, I joined Pomona College's Priva
 
 ## Failure to Comply
 
-Under the guidance of Professor Eleanor Birrell, I led an investigation into how many companies are following the new requirements, the UI designs they're using to do so, and how these designs affect users' ability to exercise their CCPA rights.  I first analysed the top 500 California websites as [repoted by Amazon Alexa](https://www.alexa.com/topsites/countries/US).  Disappointingly, I found that just 42.6% of websites had any CCPA opt-out on their site.  32.6% had no reference to CCPA's sale opt-out anywhere on their site, which given the ubiquitous presence of third-party tracking, likely means they sell information and are simply ignoring the law.  Another 23.2% claim that they don't sell personal information under CCPA's definition; however, such statements often included claims that providing their users' data to third-party tracking and targeted advertising services don't constitute a "sale" of information, despite this being the exact activity targeted by CCPA.  On the whole, given how ubiquitous we know personal information sale to be, the ability to opt out on just 42.6% of sites means that CCPA is a long ways from universal compliance.
-
-![Websites' compliance with CCPA]({{site.baseurl}}/assets/images/ccpa1/compliance-pie-chart.png)
-
-*A chart of website compliance with CCPA: just 42.6% offer a way to opt out.*
+Under the guidance of Professor Eleanor Birrell, I led an investigation into how companies responded to the new requirements. I first analysed the top 500 California websites as [repoted by Amazon Alexa](https://www.alexa.com/topsites/countries/US).  Disappointingly, I found that just 42.6% of websites had any CCPA opt-out on their site.  32.6% had no reference to CCPA's sale opt-out, which given the ubiquitous presence of third-party tracking, likely means they sell information and are simply ignoring the law.  Another 23.2% claim that they don't sell personal information under CCPA's definition; however, such statements often included claims that providing their users' data to third-party advertising services don't constitute a "sale" of information, despite this being the exact activity targeted by CCPA.  On the whole, given that we know personal information sale is nearly ubiquitous, the ability to opt out on just 42.6% of sites means that CCPA is a long ways from universal compliance.
 
 ![Denial of sale]({{site.baseurl}}/assets/images/ccpa1/third-party-tracking-denial.png)
 
-*As seen here, many of the 23.2% of sites claiming they don't sell information under CCPA admit to exactly the activities targeted by the law: selling your information to third party trackers and advertisers.*
+*Many sites claiming they don't need a CCPA opt-out admit to selling your information to third party trackers and advertisers.*
 
-What's worse, among the 42.6% of sites that did implement some sort of sale opt-out, there were numerous design issues that usually compromised users' ability to actually exercise their rights.  While CCPA requires such links to be "clear and conspicuous", 73% of these sites instead required users to scroll (often a great distance) to the bottom of their page, where the link was buried in small font within a list of other rarely-visited topics like "Legal information" and "Privacy Policy".  Another 16% explicitly violated CCPA's requirements by including no link at all, instead placing instructions for opt-out in their privacy policy.  Just 8% of pages displayed their link in an immediately visible banner, showing that a clear and conspicuous opt-out is possible—most companies simply choose not to implement one.
+What's worse, among the 42.6% of sites that did implement some sort of sale opt out, numerous design issues compromise users' ability to exercise their rights.  While CCPA requires opt out links to be "clear and conspicuous", 73% of these sites instead required users to scroll (often a great distance) to the bottom of their page, where the link was buried in small font among other rarely-visited topics like "Legal information" and "Privacy Policy".  Another 16% explicitly violated CCPA's requirements by including no link at all, instead hiding instructions for opt out in their privacy policy.  Just 8% of pages displayed their link in an immediately visible banner, showing that a clear and conspicuous opt-out is possible—most companies simply choose not to implement one.
 
 ![A typical CCPA Link]({{site.baseurl}}/assets/images/ccpa1/ccpa-link.png)
 
-*A typical CCPA link, far from "Clear and Conspicuous".*
+*A typical CCPA link, far from "Clear and Conspicuous".  Note how far down the page is scrolled.*
 
-If users manage to find these links at all, the process only gets more difficult from there.  Only 42% of websites' links led to any sort of direct, in-website opt-out mechanism such as a button, checkbox, toggle, etc.  50% of pages instead required users to fill out a form or contact the company, then wait to hear back about their request. [Another study](https://advocacy.consumerreports.org/wp-content/uploads/2021/05/CR_CCPA-Are-Consumers-Digital-Rights-Protected_092020_vf2.pdf) of these contacts found that in response, companies were frequently slow to respond, difficult to deal with, and requested excessive amounts of personal information before allowing users to opt out.  25% of opt outs directed users to third-party targeted advertising opt out sites, which don't actually stop the sale of personal information, since they allow [half of participating advertisers](https://ieeexplore.ieee.org/document/8844599) to continue collecting information about users after being placed.  38% of opt outs actually required users to complete more than one opt out process to opt out from different types of information sale; these sites' instructions were frequently convoluted, missing key information, and sometimes even self-contradictory.  For example, one such page first instructed users to save an opt-out cookie, then in another part of the instructions told the user to disable cookies entirely. Another site instructed users to visit 16 different third-party websites and file opt-out requests with them separately.  
+If users manage to find these links at all, the process only gets more difficult from there.  Only 42% of websites' links led to any sort of direct, in-website opt-out mechanism such as a button, checkbox, toggle, etc.  50% of pages instead required users to fill out a form or contact the company, then wait to hear back about their request. [Another study](https://advocacy.consumerreports.org/wp-content/uploads/2021/05/CR_CCPA-Are-Consumers-Digital-Rights-Protected_092020_vf2.pdf) of these contacts found that in response, companies were extremely slow, difficult to deal with, and requested excessive amounts of personal information before allowing users to opt out.  25% of opt outs directed users to third-party targeted advertising opt out sites, which don't actually stop the sale of personal information, since they allow [half of participating advertisers](https://ieeexplore.ieee.org/document/8844599) to continue collecting information about users after being placed.  38% of opt outs actually required users to complete more than one opt out process to opt out from different types of information sale; these sites' instructions were frequently convoluted, missing key information, and sometimes even self-contradictory.  For instance, one site instructed users to visit **16 different third-party websites** and file opt-out requests with them separately.
 
 ![Multiple third parties]({{site.baseurl}}/assets/images/ccpa1/multiple-third-parties.png)
 
-*Many opt outs were effectively unusable.  Imagine trying to figure out how to opt out from all these services' privacy policies.*
+*Many opt outs were effectively unusable.  Imagine searching every one of these services' privacy policies and trying to find how to opt out.*
 
-Even among the opt-outs that implemented a direct on-site opt out mechanism, UI barriers to opt-out were common.  We found design "Dark Patterns" present in 84% of these opt-outs.  These are patterns that aim to "nudge" or deceive the user into allowing the sale of their data: for example, highlighting the "accept" button while making "decline" physically smaller, pre-checking the option to accept data sale by default, or pop-ups asking the user "Are you sure?" before they can opt out.  Such patterns have a long history of use [throughout the web](https://www.darkpatterns.org/types-of-dark-pattern) in a variety of contexts, but are [especially frequent](https://fil.forbrukerradet.no/wp-content/uploads/2018/06/2018-06-27-deceived-by-design-final.pdf) when companies have to design privacy choices.
+Even among the opt-outs that implemented a direct on-site opt out mechanism, UI barriers to opt-out were common.  We found design Dark Patterns present in 84% of these opt-outs.  These are patterns that aim to nudge or deceive the user into allowing the sale of their data: for example, highlighting the "accept" button while making "decline" physically smaller, pre-checking the option to accept data sale by default, or pop-ups asking the user "Are you sure?" before they can opt out.  Such patterns have a long history of use [throughout the web](https://www.darkpatterns.org/types-of-dark-pattern) in a variety of contexts, but are [especially frequent](https://fil.forbrukerradet.no/wp-content/uploads/2018/06/2018-06-27-deceived-by-design-final.pdf) when companies have to design privacy choices.
 
 ![Example of dark patterns in a banner: the OK button is highlighted, and "Do Not Sell" option is to the side in small text]({{site.baseurl}}/assets/images/ccpa1/nudging.png)
 
-*Example of dark patterns in a CCPA banner: the OK button is highlighted, while the "Do Not Sell" option is to the side in small text.*
+*Dark Patterns at work: the "OK" button is highlighted, while "Do Not Sell" is in small text on the side.*
 
 ## How do these designs affect user behavior?
 
-These findings seem bad.  But to confirm that hypothesis, we created an experimental website where we could put different CCPA designs to the test.  Our site, "All Sides News", displayed top news stories filtered by political leaning.  This created an everyday browsing context where even a casual visitor might be vulnerable to having sensitive personal information about them sold.  For example, the sections and articles that a visitor clicks could reveal their political alignment and interests.
+These findings seem bad.  But to check that hypothesis, we created an experimental website where we could put different CCPA designs to the test.  Our site, "All Sides News", displayed top news stories filtered by political leaning.  This created an everyday browsing context where even a casual visitor might be vulnerable to having sensitive personal information about them sold.  For example, the sections and articles that a visitor clicks could reveal their political alignment and interests.
 
 ![Our website]({{site.baseurl}}/assets/images/ccpa1/all-sides-news.png)
 
@@ -97,7 +91,7 @@ We had two groups of California-based users visit our website: the first were re
 
 *The Google Ad shown for our website.*
 
-When entering the page, users were randomly assigned to different designs of CCPA opt-out based on their IP address.  We did two sets of experiments: the first one compared different banner locations to a link at the bottom of the page.  The second experiment measured the effect of various Dark Patterns (such as highlighting the "accept" button) and inconvenience factors (such as having to fill out a form or un-check multiple boxes).  After showing a CCPA notice, we logged each user's activity on the page under an anonymized identifier (contrary to what our website told users, no personally identifiable information was actually collected during the study).
+When entering the page, users were randomly assigned to different designs of CCPA opt-out.  We did two sets of experiments: the first one compared different banner locations to a link at the bottom of the page.  The second experiment measured the effect of various Dark Patterns (such as highlighting the "accept" button) and inconvenience factors (such as having to fill out a form or un-check multiple boxes).  After showing a CCPA notice, we logged each user's activity on the page under an anonymized identifier (contrary to what our website told users, no personally identifiable information was actually collected during the study).
 
 ![Our ccpa banner]({{site.baseurl}}/assets/images/ccpa1/banner.png)
 
@@ -105,6 +99,11 @@ When entering the page, users were randomly assigned to different designs of CCP
 
 The results show that almost all of the design elements we saw companies implement significantly reduced how many users opted out of having their personal information sold.  Unsurprisingly, when "Do Not Sell My Personal Information" was placed as a small link at the bottom of the website instead of shown in a banner, users were significantly less likely to interact with it (p < 0.001).  While 14% of Google Ads users used our opt out when it was displayed in a banner, **just 1% of users from Google Ads clicked our link at the bottom of the page to opt out.**  Mechanical Turk opt-out similarly decreased from 19.3% to 8.6%, and users shown a banner were 16.6% more likely to be aware they had an option to opt out from information sale on the page.  Dark Patterns and changing the opt-out to an indirect mechanism such as a fillable form also significantly decreased how many users opted out.  The only exception was that highlighting the "accept" button made users no less likely to decline information sales.
 
+## The Road Ahead
+
+Our results show that despite the beginning of CCPA's enforcement period, the right to universally opt out from the sale of personal information doesn't yet exist for California consumers.  Less than half of sites even have an opt out, those that do are hard to find and difficult to use, and many don't even stop your information from being sold.  These factors could all potentially be improved through enforcement and stronger guidelines about usable opt out design.  But there's also a bigger issue: no matter how visible and easy to use they are individually, opt outs that require users to separately file them with every company will remain effectively unusable as a whole.
+
+Our study showed that 
 
 
 
@@ -119,18 +118,3 @@ Finally, our results suggest that privacy regulations that dependon individual o
 
 Link to tech report:
 https://arxiv.org/abs/2009.07884
-
-
-
-
-<h2><a id="Citations">Citations</a></h2>
-
-1. [Heart disease and stroke statistics—2021 update](https://www.heart.org/-/media/phd-files-2/science-news/2/2021-heart-and-stroke-stat-update/2021_heart_disease_and_stroke_statistics_update_fact_sheet_at_a_glance.pdf?la=en): a report from the American Heart Association
-2. Bång, Angela, Lars Grip, Johan Herlitz, Stefan Kihlgren, Thomas Karlsson, Kenneth Caidahl, and Marianne Hartford. ["Lower mortality after prehospital recognition and treatment followed by fast tracking to coronary care compared with admittance via emergency department in patients with ST-elevation myocardial infarction."](https://www.sciencedirect.com/science/article/pii/S0167527307016579?casa_token=QwM9I3I5klIAAAAA:1BTMwOBPmN4yl27K4MK_dxenVVpPWVXrzWEmp2Sid99Vjj-018TLvvhR7CRVz5MGYgCmvs4a_A) International journal of cardiology 129, no. 3 (2008): 325-332.
-3. Turner, A., Dunne, R. and Wise, K., 2017. National Institute For Health Care Reform. [online] Nihcr.org. Available at: [<https://nihcr.org/wp-content/uploads/2017/06/NIHCR_Altarum_Detroit_EMS_Brief_5-30-17.pdf>](https://nihcr.org/wp-content/uploads/2017/06/NIHCR_Altarum_Detroit_EMS_Brief_5-30-17.pdf) [Accessed 8 May 2021].
-4. Mary Colleen Bhalla, Francis Mencl, Mikki Amber Gist, Scott Wilber & Jon Zalewski (2013) [Prehospital Electrocardiographic Computer Identification of ST-segment Elevation Myocardial Infarction](https://www.tandfonline.com/doi/abs/10.3109/10903127.2012.722176), Prehospital Emergency Care, 17:2, 211-216, DOI: 10.3109/10903127.2012.722176
-5. Hartman, Stephanie M., Andrew J. Barros, and William J. Brady. ["The use of a 4-step algorithm in the electrocardiographic diagnosis of ST-segment elevation myocardial infarction by novice interpreters."](https://emupdates.com/wp-content/uploads/2008/07/Hartman-4-Steps-to-STEMI-Diagnosis-AmJEM-2012.pdf) The American journal of emergency medicine 30, no. 7 (2012): 1282-1295.
-6. Mehta, S., F. Fernandez, C. Villagran, A. Frauenfelder, C. Matheus, D. Vieira, M. A. Torres et al. ["P1466 Can physicians trust a machine learning algorithm to diagnose ST elevation myocardial infarction?."](https://academic.oup.com/eurheartj/article-abstract/40/Supplement_1/ehz748.0231/5598215) European Heart Journal 40, no. Supplement_1 (2019): ehz748-0231.
-7. Liu, Wenhan, Mengxin Zhang, Yidan Zhang, Yuan Liao, Qijun Huang, Sheng Chang, Hao Wang, and Jin He. ["Real-time multilead convolutional neural network for myocardial infarction detection."](https://ieeexplore.ieee.org/document/8103330) IEEE journal of biomedical and health informatics 22, no. 5 (2017): 1434-1444.
-8. Park, Yeonghyeon, Il Dong Yun, and Si-Hyuck Kang. ["Preprocessing method for performance enhancement in cnn-based stemi detection from 12-lead ecg."](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8771175) IEEE Access 7 (2019): 99964-99977.
-9. Xiao, Ran, Yuan Xu, Michele M. Pelter, David W. Mortara, and Xiao Hu. ["A deep learning approach to examine ischemic ST changes in ambulatory ECG recordings."](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5961830/) AMIA Summits on Translational Science Proceedings 2018 (2018): 256.
