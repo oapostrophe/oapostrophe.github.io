@@ -107,7 +107,7 @@ Even in our most visible, easy-to-use study condition, most users who said they 
 
 ![do-not-track]({{site.baseurl}}/assets/images/ccpa1/do-not-track.png)
 
-*An example of the new 'Do Not Track' signal on Firefox.*
+*Browser signals could be a more user-friendly way to implement privacy opt outs.*
 
 One alternative model could be the "Do Not Track" browser signal also introduced by CCPA, but currently lacking clear guidelines for how it should be followed by companies.  This would let users change a browser option to opt out from tracking everywhere they go in a single step.  Another privacy framework is the affirmative consent model of the EU's GDPR, which requires users to opt-in to tracking instead of opting out; however, as discussed above, this model has been widely violated by companies in practice.  An individual choice model for privacy could also be eschewed entirely in favor of collective regulations on data sale and third-party tracking.  Companies could also enact voluntary change to privacy-friendly methods of advertising and monetization, which don't require ubiquitous tracking and profiling of populations.  Whatever the road forward, it's clear that CCPA is not the end of the privacy discussion; it's only the beginning.
 
