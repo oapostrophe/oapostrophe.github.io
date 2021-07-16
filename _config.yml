@@ -5,7 +5,6 @@ description: "A former EMT's journey into computer science."
 logo: 'assets/images/computer_logo.png'
 favicon: 'assets/images/logo_favicon.png'
 baseurl: ''
-google_analytics: 'G-4WW7MPMTPQ'
 include: ["_pages"]
 permalink: /:title/
 

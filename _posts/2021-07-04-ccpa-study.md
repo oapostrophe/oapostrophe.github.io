@@ -89,13 +89,13 @@ We had two groups of California-based users visit our website: the first were re
 
 ![Our google ad]({{site.baseurl}}/assets/images/ccpa1/google-ad.png)
 
-*The Google Ad shown for our website.*
+*The Google Ad we used to recruit users.*
 
 When entering the page, users were randomly assigned to different designs of CCPA opt out.  We did two sets of experiments: the first one compared different banner locations to a link at the bottom of the page.  The second experiment measured the effect of various Dark Patterns (such as highlighting the "accept" button) and inconvenience factors (such as having to fill out a form).  After showing a CCPA notice, we logged each user's activity on the page under an anonymized identifier.  Contrary to what our website told users, no personally identifiable information was actually collected during the study.
 
 ![Our ccpa banner]({{site.baseurl}}/assets/images/ccpa1/banner.png)
 
-*One of the mock CCPA banners displayed on our site (location and design varied by study condition).*
+*One of the mock CCPA banners displayed on our site (location and design varied).*
 
 The results show that almost all of the design elements we saw companies implement significantly reduced how many users opted out of having their personal information sold.  Unsurprisingly, when "Do Not Sell My Personal Information" was placed as a small link at the bottom of the website instead of shown in a banner, users were significantly less likely to interact with it (p < 0.001).  While 14% of Google Ads users used our opt out when it was displayed in a banner, **just 1% of users from Google Ads clicked our link at the bottom of the page to opt out.**  Mechanical Turk opt out similarly decreased from 19.3% to 8.6%, and users shown a banner were 16.6% more likely to be aware they had an option to opt out from information sale on the page.  Dark Patterns and changing the opt out to an indirect mechanism also significantly decreased how many users opted out.  The only exception was that highlighting the "accept" button made users no less likely to decline information sales.
 
