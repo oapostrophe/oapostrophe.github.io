@@ -28,7 +28,7 @@ What's more, in the world of smart appliances, data harvesting goes beyond just 
 ![If only all tracking was this wholesome]({{site.baseurl}}/assets/images/ccpa1/tracking-meme.jpg)
 
 What is such information used for, other than uncannily targeted ads following you around the internet?  Here are just a few things that we know of:
-- The US military, who we know [uses phone metadata for targeting drone strikes](https://www.vice.com/en/article/3da8n9/the-problem-with-using-metadata-to-justify-drone-strikes), buys location data in bulk--including that [harvested from a popular prayer app](https://www.vice.com/en/article/jgqm5x/us-military-location-data-xmode-locate-x).
+- The US military, who we know [uses phone metadata for targeting drone strikes](https://www.vice.com/en/article/3da8n9/the-problem-with-using-metadata-to-justify-drone-strikes), buys location data in bulk--including that [harvested from a popular Muslim prayer app](https://www.vice.com/en/article/jgqm5x/us-military-location-data-xmode-locate-x).
 - Radical anti-abortion groups used location data to [target anti-choice ads](https://rewirenewsgroup.com/article/2016/05/25/anti-choice-groups-deploy-smartphone-surveillance-target-abortion-minded-women-clinic-visits/) at pregnant people in abortion clinic waiting rooms.
 - Major credit agencies use a wide range of harvested behavioral data to assign people profiles with names like ["credit hungry card switcher"](https://www.experian.com/assets/marketing-services/product-sheets/audience-lookbook.pdf), which influence their credit score, opportunities for loans, and ability to obtain housing.  
 - Local law enforcement can obtain "geofencing" warrrants that allow them to blindly request the data of anyone whose device was near the scene of a crime, which has led to innocent people wrongfully [becoming crime suspects](https://www.nbcnews.com/news/us-news/google-tracked-his-bike-ride-past-burglarized-home-made-him-n1151761) and in at least one case even [jailed for a murder they didn't commit](https://www.phoenixnewtimes.com/news/google-geofence-location-data-avondale-wrongful-arrest-molina-gaeta-11426374).  
@@ -83,7 +83,7 @@ These findings seem bad.  But to check that hypothesis, we created an experiment
 
 ![Our website]({{site.baseurl}}/assets/images/ccpa1/all-sides-news.png)
 
-*Our website, which aggregated news stories from various sources and filtered them by political leaning.*
+*Our test website.*
 
 We had two groups of California-based users visit our website: the first were recruited through Amazon Mechanical Turk.  These users were paid to visit our website and browse as they normally would under the pretense of beta testing a news website.  They then returned to Amazon and completed a brief follow-up survey.  A second group of users was recruited through Google Ads; for these users, no instructions or follow-up survey were offered and we simply observed how they interacted with the website.
 
