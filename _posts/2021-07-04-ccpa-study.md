@@ -83,7 +83,7 @@ These findings seem bad.  But to check that hypothesis, we created an experiment
 
 ![Our website]({{site.baseurl}}/assets/images/ccpa1/all-sides-news.png)
 
-*Our test website.*
+*Our study website, which aggregated news stories by political leaning.*
 
 We had two groups of California-based users visit our website: the first were recruited through Amazon Mechanical Turk.  These users were paid to visit our website and browse as they normally would under the pretense of beta testing a news website.  They then returned to Amazon and completed a brief follow-up survey.  A second group of users was recruited through Google Ads; for these users, no instructions or follow-up survey were offered and we simply observed how they interacted with the website.
 
@@ -97,7 +97,7 @@ When entering the page, users were randomly assigned to different designs of CCP
 
 *One of the mock CCPA banners displayed on our site (location and design varied).*
 
-The results show that almost all of the design elements we saw companies implement significantly reduced how many users opted out of having their personal information sold.  Unsurprisingly, when "Do Not Sell My Personal Information" was placed as a small link at the bottom of the website instead of shown in a banner, users were significantly less likely to interact with it (p < 0.001).  While 14% of Google Ads users used our opt out when it was displayed in a banner, **just 1% of users from Google Ads clicked our link at the bottom of the page to opt out.**  Mechanical Turk opt out similarly decreased from 19.3% to 8.6%, and users shown a banner were 16.6% more likely to be aware they had an option to opt out from information sale on the page.  Dark Patterns and changing the opt out to an indirect mechanism also significantly decreased how many users opted out.  The only exception was that highlighting the "accept" button made users no less likely to decline information sales.
+The results show that almost all of the design elements we saw companies implement significantly reduced how many users opted out of having their personal information sold.  Unsurprisingly, when "Do Not Sell My Personal Information" was placed as a small link at the bottom of the website instead of shown in a banner, users were significantly less likely to interact with it (p < 0.001).  While 14% of Google Ads users used our opt out when it was displayed in a banner, **just 1% of users from Google Ads clicked our link at the bottom of the page to opt out.**  Mechanical Turk opt out similarly decreased from 19.3% to 8.6%, and users shown a banner were 16.6% more likely to be aware they had an option to opt out from information sale on the page.  Furthermore, all but one Dark Pattern and every inconvenience factor we studied significantly decreased users' rate of opting out.
 
 ## The Road Ahead
 
