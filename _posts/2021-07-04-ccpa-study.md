@@ -3,7 +3,7 @@ layout: post
 title:  "Privacy and the Dark Side of UI"
 author: sean
 categories: [ Privacy, User Interface, Dark Patterns, CCPA ]
-image: assets/images/ccpa1/tracking-image.jpg
+image: assets/images/ccpa1/data-center.jpg
 featured: false
 hidden: false
 description: "Blog post discussing how UI dark patterns subvert the effect of the California Consumer Privacy Act"
@@ -20,7 +20,7 @@ These data brokers have amassed extensive profiles on billions of people across 
 
 ![Examples of information included in Data Broker Profiles]({{site.baseurl}}/assets/images/ccpa1/data-broker-profiles.jpg)
 
-*Examples of information included in Data Broker Profiles.*
+*Examples of information included in Data Broker Profiles. [(source)](https://crackedlabs.org/en/corporate-surveillance)*
 
 What's more, in the world of smart appliances, data harvesting goes beyond just your internet browsing.  Carrying a smartphone at all times [enables our location history to be silently tracked](https://myshadow.org/location-tracking) and sold by apps we've installed, Wi-Fi networks we pass, and [even](https://www.eff.org/press/releases/eff-sues-att-data-aggregators-giving-bounty-hunters-and-other-third-parties-access) our [phone network providers](https://www.vice.com/en/article/nekm87/verizon-stop-selling-phone-location-data-wyden-securus-locationsmart).  Internet-connected medical devices like CPAP machines [secretly sell](https://www.propublica.org/article/you-snooze-you-lose-insurers-make-the-old-adage-literally-true) usage data to insurance companies.  Every time you swipe your credit card, payment processing companies, [not subject to the same strict data protection regulations as banks](https://www.ftc.gov/system/files/documents/public_comments/2016/11/00035-129640.pdf), can log and sell the transaction data.  "Smart" appliances like TVs, thermostats, laundry machines, even electric toothbrushes all [have the potential to track and sell your activity](https://www.theguardian.com/commentisfree/2021/apr/05/tech-police-surveillance-smart-home-devices).
 
@@ -43,7 +43,7 @@ You might wonder: when you visit a website or download an app onto your phone, h
 
 ![Data aggregation]({{site.baseurl}}/assets/images/ccpa1/data-aggregation.png)
 
-*The process of data aggregation and identification.*
+*The process of data aggregation and identification. [(source)](https://crackedlabs.org/en/corporate-surveillance)*
 
 ## California Steps in
 
