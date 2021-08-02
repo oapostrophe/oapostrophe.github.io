@@ -5,7 +5,7 @@ author: sean
 categories: [ Privacy, User Interface, Dark Patterns, CCPA ]
 image: assets/images/ccpa1/ccpa-link.png
 featured: false
-hidden: false
+hidden: true
 description: "Blog post overviewing the development of a browser extension countering User Interface Dark Patterns in CCPA data sale opt-outs."
 comments: false
 ---
