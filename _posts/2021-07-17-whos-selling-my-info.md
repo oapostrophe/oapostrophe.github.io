@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  "A browser extension fighting UI Dark Patterns "
+title:  "Clear and Conspicuous: a browser extension that counteracts UI Dark Patterns"
 author: sean
 categories: [ Privacy, User Interface, Dark Patterns, CCPA ]
 image: assets/images/ccpa1/ccpa-link.png
 featured: false
-hidden: true
-description: "Blog post overviewing the development of a browser extension countering User Interface Dark Patterns in CCPA data sale opt-outs."
+hidden: false
+description: "Blog post overviewing the development of a browser extension countering UI Dark Patterns in CCPA data sale opt-outs."
 comments: false
 ---
 
@@ -16,27 +16,27 @@ comments: false
 
 What do Best Buy, Hulu, and CNN have in common? It's hard to see, but for California residents, there's a new link on their homepage, along with 35.8% of other top US websites.
 
-The California Consumer Privacy Act (CCPA), which began enforcement July 2020, mandates that websites which sell users' information post a link titled "Do Not Sell My Personal Information" allowing them to opt out. CCPA requires that such links be "clear and conspicuous"; however, [my summery 2020 research](https://oapostrophe.github.io/ccpa-study/) revealed that most are anything but.  Most of these links are in small font, placed in an inconspicuous location buried within a list of rarely-visited page sections like "Terms and Conditions" and "Legal Information."  Users often have to scroll, sometimes a great distance, to the bottom of the page in order to even see these links.  This makes them hard to spot and unlikely to be used: on an experimental website, I found that just **1%** of users interacted with this style of link design.
+The California Consumer Privacy Act (CCPA), which began enforcement July 2020, mandates that websites which sell users' information post a link titled "Do Not Sell My Personal Information" allowing them to opt out. CCPA requires that such links be "clear and conspicuous"; however, [my summery 2020 research](https://oapostrophe.github.io/ccpa-study/) revealed that most are anything but.  Most of these links are in small font, placed in an inconspicuous location buried within a list of rarely-visited page sections like "Terms and Conditions" and "Legal Information."  Users often have to scroll, sometimes a great distance, to the bottom of the page in order to even see these links.  This makes them hard to spot and unlikely to be used—on an experimental website, I found that just **1%** of users interacted with this style of link design.
 
 ![A typical CCPA Link]({{site.baseurl}}/assets/images/ccpa1/ccpa-link.png)
 
 *A typical CCPA Link: far from clear and conspicuous.  Notice how far down the page is scrolled.*
 
-I wanted to know: could a browser extension help correct course for CCPA?  What if someone could see the web the way CCPA intended, with a truly "clear and conspicuous" notification when their information is being sold and a usable way to opt out?  While these links are difficult to see for humans, their legally-mandated standard phrasing could make them easy to detect programmatically.  Over the course of Fall 2020, I set out to build such an extension.
+I wanted to know: could a browser extension help correct course for CCPA?  What if someone could see the web the way CCPA intended, with a truly "clear and conspicuous" notification when their information is being sold?  While these links are difficult to see for humans, their legally-mandated standard phrasing could make them easy to detect programmatically.  Over the course of Fall 2020, I set out to build such an extension.
 
 ## Designing a Solution
 
-The first step was to design an automated method for detecting these links.  During my previous research, I had examined CCPA links across the Top 500 US websites.  While legally, these links are only supposed to say "Do Not Sell My Personal Information", I found 12 different variations in link titling.  I looked for a common phrase that could detect all these variations while remaining specific enough to not often occur in other contexts.  Together, the phrases "Do Not Sell" and "Don't Sell" covered every link title, and when manually searching the top 500 US sites for these phrases, I never had either of them match a page element other than a CCPA link.  These phrases obviously do occur in other contexts, but any more specificity in search phrasing would miss a substantial portion of links.  Thus, I decided that they together hit the optimal balance of statistical sensitivity and specificity.
+The first step was to design an automated method for detecting CCPA links.  During my previous research, I had examined these links across the Top 500 US websites.  While legally, they are only supposed to say "Do Not Sell My Personal Information", I found 12 different variations in link titling.  I looked for a common phrase that could detect all these variations while remaining specific enough to not often occur in other contexts.  Together, the phrases "Do Not Sell" and "Don't Sell" appeared in every link title, and when manually searching the top 500 US sites for these phrases, I never had either of them match a page element other than a CCPA link.  These phrases obviously do occur in other contexts, but any more specificity in search phrasing would miss a substantial portion of links.  Thus, I decided that they together hit the optimal balance of precision and recall.
 
 I considered how to search for these phrases, and whether any sort of specific page area or element type could be targeted for search.  But the wide range of websites that the extension needs to work on have very different link placement and page designs, without any clear universal pattern.  For example, while most links are contained in an `<a>` tag, I found some pages with different designs, such as using javascript to link the opt out when clicked.  Ultimately, I decided that it was more important this extension be reliable than extremely fast, as users will count on it to detect when their information is being sold.  Thus, I planned to implement a linear search of every page element for the target phrases, which I later found in testing never took more than a couple of seconds (and frequently was much faster).
 
-The next step was to decide what should actually be done when the link is found.  I wanted to transform these hidden links into visible, clear, and usable notifications.  My research had found that banner notifications were far more effective in making users aware they have a right to opt out of information sale, as well as substantially more likely to actually be utilized by users.  Thus, I decided to notify the user when a link was found by injecting a banner overlaying the page.  Of course, a notification that's not actionable is of limited use.  So I also planned to include some way of accessing the page's opt out directly in the injected banner.
+The next step was to decide what should actually be done when the link is found.  I wanted to transform these hidden links into visible, clear, and usable notifications.  My research had found that banner notifications were far more effective in making users aware they have a right to opt out of information sale, as well as substantially more likely to be utilized.  Thus, I decided to notify the user when a link was found by injecting a banner overlaying the page.  Of course, a notification that's not actionable is of limited use.  So I also planned to include some way of accessing the page's opt out directly in the injected banner.
 
 ![The banner used in our study]({{site.baseurl}}/assets/images/whos-selling-my-info1/study-banner.png)
 
 *The banner design which users utilized at the highest rate in my prior research.*
 
-When designing the banner, I based it on the design which got the highest rate of user opt-out in my study: a notification with a single option reading "Do Not Sell My Personal Information".  Contrary to real CCPA notices, I wrote my notice to be as short as possible with plain and direct language, to make it quickly and easily understandable by the user.  I also included a link to more information in case the user needs more background on what the notification means.  I picked a red background for the design, which [another study](https://dl.acm.org/doi/10.5555/1855768.1855793) of SSL notifications found to garner the highest interaction rates due to being perceived as a warning of potential danger.
+When designing the banner, I based it on the design which got the highest rate of user opt-out in my study: a notification with a single option reading "Do Not Sell My Personal Information".  Contrary to real CCPA notices, I wrote my notice to be as short as possible with plain and direct language.  I also included a link to more information in case the user needs more background on what the notification means.  I picked a red background for the design, which [another study](https://dl.acm.org/doi/10.5555/1855768.1855793) of SSL notifications found to garner the highest interaction rates due to being perceived as a warning of potential danger.
 
 ![My banner design]({{site.baseurl}}/assets/images/whos-selling-my-info1/notification.png)
 
@@ -153,7 +153,7 @@ The final two pieces were straightfoward: first, a simple script removes the pop
 
 *The finished extension working on a webpage.*
 
-Put together, the extension works mostly as expected!  I manually tested it across the top 100 US websites and found that it successfully detects 91% of opt-out links with 0 false positives.  A couple of websites, such as [Adobe](https://www.adobe.com/) have links that fail to be detected for reasons that aren't immediately clear.  Furthermore, while false positives on top website homepages are rare, more niche content can inadvertently trigger the detection algorithm.  For example, this page with its extensive references to "do not sell" will be wrongly flagged as selling user data.
+Put together, the extension works mostly as expected!  I manually tested it across the top 100 US websites and found that it successfully detects 91% of opt-out links with 0 false positives.  A couple of websites, such as [Adobe](https://www.adobe.com/) have links that fail to be detected for reasons that aren't immediately clear.  Furthermore, while false positives on top website homepages are rare, more niche content can inadvertently trigger the detection algorithm.  For example, this blog page with its extensive references to "do not sell" will be wrongly flagged as selling user data.
 
 One limitation of the extension is that it only detects the 32% of websites that actually have a CCPA opt out link on their homepage.  A key finding of my research is that compliance with CCPA is still far from universal; about 1/3 of websites have failed to implement any response to CCPA's right to opt out of sale, and another significant minority have an opt out only in their privacy policy.  Future development could improve the extension by searching each site's privacy policy in addition to its homepage.  But ultimately, in the face of significant CCPA noncompliance, to fully know the extent of when users' information is being sold would require other methods of sale and tracking detection.
 
