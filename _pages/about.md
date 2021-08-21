@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About Me
-description: "My journey so far"
+description: ""
 permalink: /about
 comments: false
 ---
