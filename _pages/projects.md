@@ -27,5 +27,5 @@ Researching the impact of UI for CCPA data sale opt-outs.
 [Blog Post](https://oapostrophe.github.io/ccpa-study/)  
 [GitHub Repo](https://github.com/oapostrophe/ab-testing-privacy-ui)
 **Scope**: 3 months (Summer 2020)  
-**Main Technologies**: Python, Flask, Javascript
-**Accomplishments**: Deploying site to ~4,300 users, submitting results as first author to peer-reviewed conference.
+**Main Technologies**: Python, Flask, Javascript  
+**Accomplishments**: Deploying site to ~4,300 users, submitting results as first author to peer-reviewed conference.  
