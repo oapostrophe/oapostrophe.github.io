@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Clear and Conspicuous: a browser extension that counteracts UI Dark Patterns"
+title:  "Who's Selling My Info? A Browser Extension for CCPA Dark Patterns"
 author: sean
 categories: [ Privacy, User Interface, Dark Patterns, CCPA ]
 image: assets/images/ccpa1/ccpa-link.png
@@ -16,7 +16,7 @@ comments: false
 
 What do Best Buy, Hulu, and CNN have in common? It's hard to see, but for California residents, there's a new link on their homepage, along with 35.8% of other top US websites.
 
-The California Consumer Privacy Act (CCPA), which began enforcement July 2020, mandates that websites which sell users' information post a link titled "Do Not Sell My Personal Information" allowing them to opt out. CCPA requires that such links be "clear and conspicuous"; however, [my summery 2020 research](https://oapostrophe.github.io/ccpa-study/) revealed that most are anything but.  Most of these links are in small font, placed in an inconspicuous location buried within a list of rarely-visited page sections like "Terms and Conditions" and "Legal Information."  Users often have to scroll, sometimes a great distance, to the bottom of the page in order to even see these links.  This makes them hard to spot and unlikely to be used—on an experimental website, I found that just **1%** of users interacted with this style of link design.
+The California Consumer Privacy Act (CCPA), which began enforcement July 2020, mandates that websites which sell users' information post a link titled "Do Not Sell My Personal Information" allowing them to opt out. CCPA requires that such links be "clear and conspicuous"; however, [my summery 2020 research](https://oapostrophe.github.io/ccpa-study/) revealed that most are anything but.  Most of these links are in small font, placed in an inconspicuous location buried within a list of rarely-visited page sections like "Terms and Conditions" and "Legal Information."  Users often have to scroll, sometimes a great distance, to the bottom of the page in order to even see these links.  This makes them hard to spot and unlikely to be used—on an experimental website, I found that just **1% of users** interacted with this link design.
 
 ![A typical CCPA Link]({{site.baseurl}}/assets/images/ccpa1/ccpa-link.png)
 
@@ -26,7 +26,7 @@ I wanted to know: could a browser extension help correct course for CCPA?  What 
 
 ## Designing a Solution
 
-The first step was to design an automated method for detecting CCPA links.  During my previous research, I had examined these links across the Top 500 US websites.  While legally, they are only supposed to say "Do Not Sell My Personal Information", I found 12 different variations in link titling.  I looked for a common phrase that could detect all these variations while remaining specific enough to not often occur in other contexts.  Together, the phrases "Do Not Sell" and "Don't Sell" appeared in every link title, and when manually searching the top 500 US sites for these phrases, I never had either of them match a page element other than a CCPA link.  These phrases obviously do occur in other contexts, but any more specificity in search phrasing would miss a substantial portion of links.  Thus, I decided that they together hit the optimal balance of precision and recall.
+The first step was to design an automated method for detecting CCPA links.  During my previous research, I had examined these links across the Top 500 US websites.  While legally, they are only supposed to say "Do Not Sell My Personal Information", I found 12 different variations in link titling.  I looked for a common phrase that could detect all these variations while remaining specific enough to not often occur in other contexts.  Together, the phrases "Do Not Sell" and "Don't Sell" appeared in every link title, and when manually searching the top 500 US sites for these phrases, I never had either of them match a page element other than a CCPA link.  These phrases obviously do occur in other contexts, but any more specificity in search phrasing would miss a substantial portion of links.  Thus, I decided that these two wordings hit the optimal balance of precision and recall.
 
 I considered how to search for these phrases, and whether any sort of specific page area or element type could be targeted for search.  But the wide range of websites that the extension needs to work on have very different link placement and page designs, without any clear universal pattern.  For example, while most links are contained in an `<a>` tag, I found some pages with different designs, such as using javascript to link the opt out when clicked.  Ultimately, I decided that it was more important this extension be reliable than extremely fast, as users will count on it to detect when their information is being sold.  Thus, I planned to implement a linear search of every page element for the target phrases, which I later found in testing never took more than a couple of seconds (and frequently was much faster).
 
