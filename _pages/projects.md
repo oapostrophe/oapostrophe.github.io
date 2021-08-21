@@ -5,11 +5,13 @@ permalink: /projects
 comments: false
 ---
 
+*My projects with demos in ~90 seconds or less.*
+
 ## Neural Network Heart Attack Detection: 
 
 [![Demo of the finished product]({{site.baseurl}}/assets/images/heartnet1/preview.jpg)](https://www.youtube.com/watch?v=EqAU-FRu6C4)
   
-[Project Demo (94 seconds)](https://www.youtube.com/watch?v=EqAU-FRu6C4)  
+[Project Demo](https://www.youtube.com/watch?v=EqAU-FRu6C4)  
 [Blog Post](https://oapostrophe.github.io/heartnet/)  
 [GitHub Repo](https://github.com/oapostrophe/ab-testing-privacy-ui)  
 **Scope**: 4 months (Spring 2021)  
@@ -21,7 +23,7 @@ comments: false
 
 [![Screenshot from the site]({{site.baseurl}}/assets/images/ccpa1/preview.png)](https://www.youtube.com/watch?v=270LdQcHkQ4)
  
-[Project Demo (67 seconds)](https://www.youtube.com/watch?v=270LdQcHkQ4)  
+[Project Demo](https://www.youtube.com/watch?v=270LdQcHkQ4)  
 [Blog Post](https://oapostrophe.github.io/ccpa-study/)  
 [GitHub Repo](https://github.com/oapostrophe/ab-testing-privacy-ui)  
 **Scope**: 3 months (Summer 2020)  
