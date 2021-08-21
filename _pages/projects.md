@@ -12,7 +12,7 @@ comments: false
 Developing proof-of-concept for a new method of neural network heart attack detection.  
 [Project Demo (94 seconds)](https://www.youtube.com/watch?v=EqAU-FRu6C4)  
 [Blog Post](https://oapostrophe.github.io/heartnet/)  
-[GitHub Repo](https://github.com/oapostrophe/ab-testing-privacy-ui)
+[GitHub Repo](https://github.com/oapostrophe/ab-testing-privacy-ui)  
 **Scope**: 4 months (Spring 2021)  
 **Main Technologies**: Python, FastAI  
 **Accomplishments**: Generating a 21,000-image dataset and training a convolutional neural network to 90% accuracy.  
