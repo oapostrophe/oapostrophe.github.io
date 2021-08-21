@@ -3,7 +3,7 @@ layout: post
 title:  "Who's Selling My Info? A Browser Extension for CCPA Dark Patterns"
 author: sean
 categories: [ Privacy, User Interface, Dark Patterns, CCPA ]
-image: assets/images/ccpa1/testing.png
+image: assets/images/whos-selling-my-info1/testing.png
 featured: false
 hidden: false
 description: "Blog post overviewing the development of a browser extension countering UI Dark Patterns in CCPA data sale opt-outs."
