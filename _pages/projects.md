@@ -6,6 +6,8 @@ permalink: /projects
 comments: false
 ---
 
+*My portfolio with demos in ~90 seconds or less.*
+
 #### Neural Network Heart Attack Detection: 
 
 [![Demo of the finished product]({{site.baseurl}}/assets/images/heartnet1/preview.jpg)](https://www.youtube.com/watch?v=EqAU-FRu6C4)
