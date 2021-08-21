@@ -22,7 +22,7 @@ Developing proof-of-concept for a new method of neural network heart attack dete
 
 ![Screenshot from the site]({{site.baseurl}}/assets/images/ccpa1/preview.png)
 
-Researching the impact of UI for CCPA data sale opt-outs.  
+Researching the impact of UI design on CCPA data sale opt-outs.  
 [Project Demo (67 seconds)](https://www.youtube.com/watch?v=270LdQcHkQ4)  
 [Blog Post](https://oapostrophe.github.io/ccpa-study/)  
 [GitHub Repo](https://github.com/oapostrophe/ab-testing-privacy-ui)
