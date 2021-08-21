@@ -5,7 +5,9 @@ layout: default
 
 <section>
     <div class="section-title">
+        {% if page.url == "/" %}
         <h2><span>{{ page.title }}</span></h2>
+        {% endif %}
     </div>
 
     <div class="article-post">

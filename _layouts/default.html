@@ -86,7 +86,7 @@
                 {% else %}
                 <li class="nav-item">
                 {% endif %}
-                <a class="nav-link" href="{{ site.baseurl }}/about">About Me</a>
+                <a class="nav-link" href="{{ site.baseurl }}/about">About</a>
                 </li>
 
               
@@ -119,10 +119,17 @@
 <!-- Site Title
 ================================================== -->
 <div class="mainheading">
+    {% if page.url == "/" %}
     <h1>{{ site.name }}</h1>
     <p class="lead">
         {{ site.description }}
     </p>
+    {% else %}
+    <h1> {{ page.title }} </h1>
+    <p class="lead">
+        {{ page.description }}
+    </p>
+    {% endif %}
 </div>
 
 <!-- Content
