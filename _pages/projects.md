@@ -7,7 +7,7 @@ comments: false
 
 *My projects with demos in ~90 seconds or less.*
 
-## Neural Network Heart Attack Detection: 
+### Neural Network Heart Attack Detection: 
 
 [![Demo of the finished product]({{site.baseurl}}/assets/images/heartnet1/preview.jpg)](https://www.youtube.com/watch?v=EqAU-FRu6C4)
   
@@ -19,7 +19,7 @@ comments: false
 **Accomplishments**: Generating a 21,000-image dataset, training a convolutional neural network to 90% accuracy.  
 
 
-## A/B Testing Privacy UI:
+### A/B Testing Privacy UI:
 
 [![Screenshot from the site]({{site.baseurl}}/assets/images/ccpa1/preview.png)](https://www.youtube.com/watch?v=270LdQcHkQ4)
  
