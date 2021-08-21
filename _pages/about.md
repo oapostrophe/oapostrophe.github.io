@@ -30,7 +30,7 @@ comments: false
 <p class="mb-5"><img class="shadow-lg" src="{{site.baseurl}}/assets/images/profile_pic.jpg" alt="A picture of me, Sean O'Connor" /></p>
 <h5> Contact </h5>
 
-<p>You can reach me by <a target="_blank" href="mailto:swow2015@mymail.pomona.edu">email</a>, on <a target="_blank" href="https://www.linkedin.com/in/oapostrophe/">LinkedIn</a>, or even submit an issue on my <a target="_blank" href="https://github.com/">GitHub</a>.  If you're a recruiter, I'm interested in any full-time job opportunities starting after I graduate Spring 2022.  If you're a student considering or currently studying CS, I'd love to help answer any of your questions or offer advice/mentorship.
+<p>You can reach me by <a target="_blank" href="mailto:swow2015@mymail.pomona.edu">email</a>, on <a target="_blank" href="https://www.linkedin.com/in/oapostrophe/">LinkedIn</a>, or even submit an issue on my <a target="_blank" href="https://github.com/">GitHub</a>.  **I'm graduating in May 2022 and am currently interested in new grad job opportunities.**  If you're a student considering or currently studying CS, I'd love to help answer any of your questions or offer advice/mentorship.
 </p>
 </div>
 </div>
